@@ -15,8 +15,14 @@ import '../../../../generated/l10n.dart';
 
 class GeneralSectorScreen extends StatefulWidget {
   static const String routeName = "GeneralSectorScreen";
-  const GeneralSectorScreen({super.key, required this.name});
+  const GeneralSectorScreen(
+      {super.key,
+      required this.name,
+      required this.index,
+      required this.title});
   final String name;
+  final int index;
+  final String title;
 
   @override
   State<GeneralSectorScreen> createState() => _GeneralSectorScreenState();
@@ -49,7 +55,7 @@ class _GeneralSectorScreenState extends State<GeneralSectorScreen> {
                   Container(
                     constraints: BoxConstraints(maxWidth: 360.w),
                     child: Text(
-                      widget.name,
+                      widget.title,
                       style: TextStyle(
                         fontSize: 20.sp,
                         fontWeight: FontWeight.bold,

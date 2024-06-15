@@ -137,8 +137,10 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.banks,
+                                              index: index,
+                                              title: S.of(context).banks,
                                             ),
                                           ),
                                         );
@@ -146,8 +148,12 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.industrial,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .Industrial_services_products_and_cars,
                                             ),
                                           ),
                                         );
@@ -155,8 +161,10 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.real,
+                                              index: index,
+                                              title: S.of(context).real_estate,
                                             ),
                                           ),
                                         );
@@ -164,9 +172,13 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name:
                                                   DataSectorsEn.communications,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .communications_media_and_information_technology,
                                             ),
                                           ),
                                         );
@@ -174,8 +186,12 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.food,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .food_drinks_and_tobacco,
                                             ),
                                           ),
                                         );
@@ -183,9 +199,13 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name:
                                                   DataSectorsEn.transportation,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .transportation_and_shipping_services,
                                             ),
                                           ),
                                         );
@@ -214,8 +234,12 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.nonBanking,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .non_banking_financial_services,
                                             ),
                                           ),
                                         );
@@ -223,8 +247,12 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.engineering,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .engineering_contracting_and_construction,
                                             ),
                                           ),
                                         );
@@ -232,8 +260,12 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.textiles,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .textiles_and_durable_goods,
                                             ),
                                           ),
                                         );
@@ -241,8 +273,12 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.health,
+                                              index: index,
+                                              title: S
+                                                  .of(context)
+                                                  .Health_care_and_medicines,
                                             ),
                                           ),
                                         );
@@ -250,8 +286,11 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const GeneralSectorScreen(
+                                                GeneralSectorScreen(
                                               name: DataSectorsEn.basic,
+                                              index: index,
+                                              title:
+                                                  S.of(context).basic_resources,
                                             ),
                                           ),
                                         );
