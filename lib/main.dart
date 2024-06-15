@@ -21,6 +21,7 @@ import 'package:app/src/feature/auth/register/view/information_user.dart';
 import 'package:app/src/feature/auth/register/view/password_screen.dart';
 import 'package:app/src/feature/auth/register/view/register_screen.dart';
 import 'package:app/src/feature/data_card/view/data_card_screen.dart';
+import 'package:app/src/feature/feed/view/Widgets/item_details_widget.dart';
 import 'package:app/src/feature/init_home/view/init_home_screen.dart';
 import 'package:app/src/feature/navicator_sectors/view/general_sector_screen.dart';
 import 'package:app/src/feature/payment/view/payment_screen.dart';

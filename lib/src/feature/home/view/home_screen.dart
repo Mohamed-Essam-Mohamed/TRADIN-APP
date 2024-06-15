@@ -138,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.banks,
+                                              name: DataSectorsEn.banks,
                                             ),
                                           ),
                                         );
@@ -147,7 +147,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.industrial,
+                                              name: DataSectorsEn.industrial,
                                             ),
                                           ),
                                         );
@@ -156,7 +156,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.real,
+                                              name: DataSectorsEn.real,
                                             ),
                                           ),
                                         );
@@ -165,7 +165,8 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.communications,
+                                              name:
+                                                  DataSectorsEn.communications,
                                             ),
                                           ),
                                         );
@@ -174,7 +175,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.food,
+                                              name: DataSectorsEn.food,
                                             ),
                                           ),
                                         );
@@ -183,7 +184,8 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.transportation,
+                                              name:
+                                                  DataSectorsEn.transportation,
                                             ),
                                           ),
                                         );
@@ -213,7 +215,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.nonBanking,
+                                              name: DataSectorsEn.nonBanking,
                                             ),
                                           ),
                                         );
@@ -222,7 +224,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.engineering,
+                                              name: DataSectorsEn.engineering,
                                             ),
                                           ),
                                         );
@@ -231,7 +233,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.textiles,
+                                              name: DataSectorsEn.textiles,
                                             ),
                                           ),
                                         );
@@ -240,7 +242,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.health,
+                                              name: DataSectorsEn.health,
                                             ),
                                           ),
                                         );
@@ -249,7 +251,7 @@ class HomeScreen extends StatelessWidget {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const GeneralSectorScreen(
-                                              name: DataSectors.basic,
+                                              name: DataSectorsEn.basic,
                                             ),
                                           ),
                                         );

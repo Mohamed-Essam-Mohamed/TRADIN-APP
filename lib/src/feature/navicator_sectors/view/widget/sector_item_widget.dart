@@ -4,11 +4,17 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 
 class SectorItemWidget extends StatelessWidget {
-  const SectorItemWidget(
-      {super.key, required this.sectorList, required this.index});
+  SectorItemWidget(
+      {super.key,
+      required this.sectorListEn,
+      required this.index,
+      required this.sectorListAr,
+      required this.isEn});
   final int index;
 
-  final List<DataSectors> sectorList;
+  final List<DataSectorsEn> sectorListEn;
+  final List<DataSectorsAr> sectorListAr;
+  final isEn;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +23,7 @@ class SectorItemWidget extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            sectorList[index].image,
+            isEn ? sectorListEn[index].image : sectorListAr[index].image,
             height: 60.h,
             width: 60.w,
             fit: BoxFit.contain,
@@ -26,7 +32,7 @@ class SectorItemWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                sectorList[index].name,
+                isEn ? sectorListEn[index].name : sectorListAr[index].name,
                 style: TextStyle(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
@@ -41,7 +47,9 @@ class SectorItemWidget extends StatelessWidget {
                     Container(
                       constraints: BoxConstraints(maxWidth: 280.w),
                       child: Text(
-                        sectorList[index].description,
+                        isEn
+                            ? sectorListEn[index].description
+                            : sectorListAr[index].description,
                         style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w400,
@@ -52,13 +60,19 @@ class SectorItemWidget extends StatelessWidget {
                     ),
                     const Spacer(),
                     Text(
-                      sectorList[index].profit,
+                      isEn
+                          ? sectorListEn[index].profit
+                          : sectorListAr[index].profit,
                       style: TextStyle(
                         fontSize: 15.sp,
                         fontWeight: FontWeight.w400,
-                        color: sectorList[index].isBlue
-                            ? Color(0xff21F92A)
-                            : Color(0xffED0006),
+                        color: isEn
+                            ? sectorListEn[index].isBlue
+                                ? Color(0xff21F92A)
+                                : Color(0xffED0006)
+                            : sectorListAr[index].isBlue
+                                ? Color(0xff21F92A)
+                                : Color(0xffED0006),
                       ),
                     ),
                   ],
