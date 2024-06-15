@@ -1,5 +1,9 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:app/generated/l10n.dart';
+import 'package:app/src/data/model/dataclass/data_sectors.dart';
 import 'package:app/src/feature/home/view/widget/container_home_screen_bast.dart';
+import 'package:app/src/feature/navicator_sectors/view/general_sector_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -101,6 +105,7 @@ class HomeScreen extends StatelessWidget {
                         separatorBuilder: (context, index) => Gap(20.h),
                       ),
                     ),
+                    //!
                     Gap(10.h),
                     Text(
                       S.of(context).sectors,
@@ -126,10 +131,68 @@ class HomeScreen extends StatelessWidget {
                                       Gap(10.h),
                                   scrollDirection: Axis.horizontal,
                                   shrinkWrap: true,
-                                  itemBuilder: (context, index) =>
-                                      WidgetSectors(
-                                    title1: listSectors1[index],
-                                    isSelected: true,
+                                  itemBuilder: (context, index) => InkWell(
+                                    onTap: () {
+                                      if (index == 0) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.banks,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 1) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.industrial,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 2) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.real,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 4) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.communications,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 5) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.food,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 8) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.transportation,
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                    },
+                                    child: WidgetSectors(
+                                      title1: listSectors1[index],
+                                      isSelected: true,
+                                    ),
                                   ),
                                   itemCount: listSectors1.length,
                                 ),
@@ -138,15 +201,64 @@ class HomeScreen extends StatelessWidget {
                               Container(
                                 height: 50.h,
                                 child: ListView.separated(
-                                  physics: NeverScrollableScrollPhysics(),
+                                  physics: const NeverScrollableScrollPhysics(),
                                   separatorBuilder: (context, index) =>
                                       Gap(10.h),
                                   scrollDirection: Axis.horizontal,
                                   shrinkWrap: true,
-                                  itemBuilder: (context, index) =>
-                                      WidgetSectors(
-                                    title1: listSectors2[index],
-                                    isSelected: true,
+                                  itemBuilder: (context, index) => InkWell(
+                                    onTap: () {
+                                      if (index == 1) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.nonBanking,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 2) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.engineering,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 3) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.textiles,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 5) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.health,
+                                            ),
+                                          ),
+                                        );
+                                      } else if (index == 6) {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const GeneralSectorScreen(
+                                              name: DataSectors.basic,
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                    },
+                                    child: WidgetSectors(
+                                      title1: listSectors2[index],
+                                      isSelected: true,
+                                    ),
                                   ),
                                   itemCount: listSectors2.length,
                                 ),
